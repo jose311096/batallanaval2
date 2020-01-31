@@ -196,3 +196,7 @@ function checkWinner(matrix, player){
         alert("GANASTE!!!")
     }
 }
+
+function reset(){
+    location.reload();
+}
