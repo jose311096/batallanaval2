@@ -199,4 +199,5 @@ function checkWinner(matrix, player){
 
 function reset(){
     location.reload();
+    $("#myAlert").alert("close");
 }
