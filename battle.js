@@ -183,6 +183,7 @@ function shotPc(){
 }
 //Revisar ganador
 function checkWinner(matrix, player){
+    var final;
     for(let i=0; i<10; i++){
         let arraychecked = matrix[i].filter((index)=>{return index === "ship"})
         if(arraychecked.length > 0){
@@ -190,10 +191,24 @@ function checkWinner(matrix, player){
         }
     }
     if(player === "pc"){
-        alert("Ha ganado el PC")
+        document.getElementById("descripcion").innerHTML = "Ha ganado la maquina";
+        final = confirm("Ha ganado la maquina");
+        if(final){
+            alert("Reiniciando");
+            reset();
+        }else{
+            alert("Reinicia cuando quieras");
+        }
     }
     else{
-        alert("GANASTE!!!")
+        document.getElementById("descripcion").innerHTML = "GANASTE";
+        final = confirm("GANASTE");
+        if(final){
+            alert("Reiniciando");
+            reset();
+        }else{
+            alert("Reinicia cuando quieras");
+        }
     }
 }
 
