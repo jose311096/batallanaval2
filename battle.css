@@ -30,23 +30,25 @@ body{
     width: 35px;
     height: 15px;
     border: black 0.5px solid;
-    background-color: black;
+    background-image: url("imagenes/barco.png");
+
 }
 .vertical{
     width: 15px;
     height: 35px;
     border: black 0.5px solid;
     margin-top: 5px;
-    background-color: black;
+    background-image: url("imagenes/barco.png");
+
 }
 .selected{
-    background-color: blue;
+    background-image: url("imagenes/barco.png");
 }
 .hit{
-    background-color: red;
+    background-image: url("imagenes/acierto.png");
 }
 .miss{
-    background-color: gray;
+    background-image: url("imagenes/fallo.png");
 }
 
 #ships{
